@@ -1,0 +1,18 @@
+ {% extends 'base.html' %}
+ {% block contents %}
+              <div class="container">
+                   <h1>New Page</h1>
+                   <form action="{% url 'create' %}">
+                       <p>title : </p>
+                       <input type="text" name="title">
+                       <p>content : </p>
+                       <textarea name="body" id="" cols="30" rows="10"></textarea><br/></textarea><br/>
+                       <input type="submit" value="Submit!" class="btn btn-primary">
+
+
+                   </form>
+
+                </div>
+    
+</body>
+{% endblock %}
